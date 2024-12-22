@@ -1,0 +1,189 @@
+main {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.fv {
+  display: grid;
+  justify-content: center;
+  margin: 32px 0px;
+}
+
+.fv__what-can-do-container {
+  padding: 20px 25px;
+  margin: -8px 0px;
+  border: 1px solid #E4E4E7;
+  border-radius: 8px;
+}
+
+.about__sample-project {
+  display: grid;
+  justify-content: center;
+  background-color: #F3F4F6;
+  padding: 64px 0px;
+}
+
+.about__sample-project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.about__sample-project-container__item {
+  width: 474.66px;
+  border: 1px solid #E4E4E7;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  padding: 24px;
+}
+
+.event_booking {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.musle_event_reccomend {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.about__sample-project-container__item-description {
+  color: #717985;
+  padding: 10px 0px;
+}
+
+.about__sample-project-container__item-technology {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0px 0px 10px 0px;
+}
+
+.about__sample-project-container__item-technology li {
+  margin-right: 5px;
+  padding: 5px 10px;
+  width: auto;
+  border: 1px solid #F4F4F5;
+  border-radius: 100px;
+  background-color: #F4F4F5;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.about__sample-project-container__item-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about__sample-project-container__item-link a {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: 1px solid #E4E4E7;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #09090B;
+  text-decoration: none;
+}
+
+.about__sample-project-container__item-link a:nth-child(2) {
+    margin-right: 0px;
+}
+
+.about__provided-services {
+  padding: 64px 0px;
+}
+
+.about__provided-services-container {
+  padding-top: 20px;
+}
+
+.about__provided-services-container__item {
+  display: grid;
+  grid-template-columns: repeat(2, 33%);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  gap: 20px;
+}
+
+.about__provided-services-container__item-title {
+  padding: 25px;
+  border: 1px solid #E4E4E7;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #09090B;
+  text-align: center;
+}
+
+.about__provided-services-container__item-title:nth-child(1) {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.about__provided-services-container__item-title:nth-child(2) {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.about__provided-services-container__item-title:nth-child(3) {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.about__provided-services-container__item-title:nth-child(4) {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.footer {
+  display: grid;
+  justify-content: center;
+  background-color: #F3F4F6;
+  padding: 64px 0px;
+}
+
+.footer__contact-container__item {
+  margin-top: 20px;
+  padding: 25px;
+  border: 1px solid #E4E4E7;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+}
+
+.footer__contact-container__item-form {
+  display: flex;
+  flex-direction: column;
+  width: 423px;
+  padding-top: 10px;
+}
+
+.footer__contact-container__item-form :is(input, textarea) {
+  margin-bottom: 15px;
+  border: 1px solid #E4E4E7;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+}
+
+.footer__contact-container__item-form button {
+  padding: 10px 0px;
+  border: 1px solid #18181B;
+  border-radius: 6px;
+  background-color: #18181B;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 430px) {
+  .about__sample-project-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about__provided-services-container__item {
+    grid-template-columns: repeat(1, 50%);
+    grid-template-rows: repeat(4, auto);
+  }
+
+}
